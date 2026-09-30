@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: rss-mcp
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
