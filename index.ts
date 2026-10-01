@@ -8,9 +8,12 @@ const parser = new Parser();
 
 // Tes flux ici — modifie librement puis redéploie
 const FEEDS: Record<string, string> = {
-  "Hacker News": "https://hnrss.org/frontpage",
-  "Le Monde": "https://www.lemonde.fr/rss/une.xml",
-  "LWN": "https://lwn.net/headlines/rss",
+"Leptidigital": "https://www.leptidigital.fr/feed/",
+"Blog du Modérateur": "https://www.blogdumoderateur.com/feed/",
+"Korben": "https://korben.info/feed",
+"ComfyUI / Comfy.org": "https://blog.comfy.org/feed",
+"Kim Komando": "https://komando.substack.com/feed",
+"Supabase": "https://www.supabase.com/rss.xml",
 };
 
 const server = new McpServer({ name: "rss-aggregator", version: "1.0.0" });
